@@ -3,13 +3,13 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-; v1
-; Use the [`] key to enable ability key delay
+; v1.1
+; Use the [F1] key to enable ability key delay
 ; - Rhett
 
 isEnabled := false
 
-*`::
+*F1::
 isEnabled := !isEnabled
 if isEnabled {
 	SoundBeep, 300, 50
